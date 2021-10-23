@@ -1,4 +1,4 @@
-package example.objectpool;
+package implementation.objectpool;
 
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.Executors;

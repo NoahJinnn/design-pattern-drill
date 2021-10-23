@@ -1,4 +1,4 @@
-package example.functionargument;
+package implementation.functionargument;
 
 public interface OneIntArgFunc {
     int exec(int a);

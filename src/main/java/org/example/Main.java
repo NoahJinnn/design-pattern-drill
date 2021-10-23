@@ -1,12 +1,10 @@
 package org.example;
 
-import example.functionargument.Consumer;
-
 /**
  * Hello world!
  *
  */
-public class DataStructure
+public class Main
 {
 
     public static void main(String s[]) {

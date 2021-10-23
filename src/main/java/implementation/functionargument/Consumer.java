@@ -1,4 +1,4 @@
-package example.functionargument;
+package implementation.functionargument;
 
 public class Consumer {
     public void exec() {
