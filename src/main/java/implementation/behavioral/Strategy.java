@@ -6,7 +6,12 @@ package implementation.behavioral;
  * This applies OO principles: Encapsulate what varies, Prefer composition over inheritance, Program to interface over implementation
  */
 public class Strategy {
-
+    Duck fineToy = new DuckToy();
+    void main() {
+        fineToy.doQuack(); // default quack
+        fineToy.setQuackable(new NoisyQuack());
+        fineToy.doQuack(); // start quacking hardly
+    }
 }
 
 // This is an abstraction of main objects
