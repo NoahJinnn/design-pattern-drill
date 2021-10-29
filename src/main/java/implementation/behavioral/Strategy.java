@@ -2,7 +2,8 @@ package implementation.behavioral;
 
 /**
  * Strategies is seem to be algorithms to solve problems around an object.
- * The idea is that we split our algorithm implementation (which changes frequently bc of requirements) from our main object implementation.
+ * The idea is that we split our algorithms implementation (which changes frequently bc of requirements) from our main object implementation
+ * and then set those algorithms at runtime
  * This applies OO principles: Encapsulate what varies, Prefer composition over inheritance, Program to interface over implementation
  */
 public class Strategy {
