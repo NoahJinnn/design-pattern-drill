@@ -1,4 +1,4 @@
-package implementation.behavioral;
+package implementation.structural;
 /**
  * Decorator pattern helps attach additional responsibilities to an object dynamically
  * Sastify Open-Closed principle
