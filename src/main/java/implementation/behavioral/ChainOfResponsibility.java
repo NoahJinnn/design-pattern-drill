@@ -1,5 +1,8 @@
 package implementation.behavioral;
 
+/**
+ * Use the Chain of Responsibility Pattern when you want to give more than one object a chance to handle a request
+ */
 public class ChainOfResponsibility {
     void main() {
         Handler authener = new AuthenHandler();
