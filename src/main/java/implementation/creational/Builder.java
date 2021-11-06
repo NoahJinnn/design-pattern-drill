@@ -2,6 +2,9 @@ package implementation.creational;
 
 import lombok.Getter;
 
+/**
+ * Builder encapsulates the construction of object and allows it to construct in steps
+ */
 public class Builder {
     void main() {
         Person person = Person.builder().setMale(false).setAge(1).build();
