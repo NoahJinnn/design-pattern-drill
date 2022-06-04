@@ -9,6 +9,15 @@ mod builder {
         pub age: u8,
     }
 
+    impl Person {
+        pub fn builder() -> PersonBuilder {
+            PersonBuilder {
+                name: String::new(),
+                age: 0,
+            }
+        }
+    }
+
     impl From<PersonBuilder> for Person {
         fn from(builder: PersonBuilder) -> Self {
             Person {
@@ -17,15 +26,14 @@ mod builder {
             }
         }
     }
+    
+    impl Default for Person {
+        fn default() -> Self {
+            Person::from(PersonBuilder::default())
+        }
+    }
 
     impl PersonBuilder {
-        pub fn new() -> Self {
-            PersonBuilder {
-                name: String::new(),
-                age: 0,
-            }
-        }
-
         pub fn set_name(mut self, name: &str) -> Self {
             self.name = name.to_string();
             self
@@ -41,12 +49,6 @@ mod builder {
         }
     }
 
-    impl Default for Person {
-        fn default() -> Self {
-            Person::from(PersonBuilder::default())
-        }
-    }
-
     impl Default for PersonBuilder {
         fn default() -> Self {
             PersonBuilder {
@@ -57,7 +59,7 @@ mod builder {
     }
     #[test]
     fn test_builder() {
-        let person = PersonBuilder::new().set_name("John").set_age(18).build();
+        let person = Person::builder().set_name("John").set_age(18).build();
         assert_eq!(person.name, "John");
         assert_eq!(person.age, 18);
     }
