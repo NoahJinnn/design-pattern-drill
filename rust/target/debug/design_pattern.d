@@ -1,1 +1,0 @@
-/Users/trannguyen/Workspaces/ref/design-pattern-drill/rust/target/debug/design_pattern: /Users/trannguyen/Workspaces/ref/design-pattern-drill/rust/src/creational/builder.rs /Users/trannguyen/Workspaces/ref/design-pattern-drill/rust/src/creational/mod.rs /Users/trannguyen/Workspaces/ref/design-pattern-drill/rust/src/main.rs
