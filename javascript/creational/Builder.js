@@ -1,19 +1,14 @@
 class Person {
   #name;
   #age;
-  #job;
 
-  constructor(name, age, job) {
+  constructor(name, age) {
     this.#name = name;
     this.#age = age;
-    this.#job = job;
   }
 
   getName() {
     return this.#name;
-  }
-  getJob() {
-    return this.#job;
   }
   getAge() {
     return this.#age;
@@ -27,7 +22,6 @@ class PersonBuilder {
   #date;
   #name;
   #age;
-  #job;
   constructor() {
     this.#date = Date.now();
   }
@@ -42,21 +36,17 @@ class PersonBuilder {
     return this;
   }
 
-  setJob(job) {
-    this.#job = job;
-    return this;
-  }
 
   build() {
-    let p = new Person(this.#name, this.#age, this.#job);
+    let p = new Person(this.#name, this.#age);
     console.log(`Build ${p.getName()} at: ${this.#date}`);
     return p;
   }
 }
 
-const person = Person.builder()
-  .setName("John")
-  .setAge(30)
-  .setJob("Developer")
-  .build();
-console.log(person.getName());
+
+
+module.exports = {
+  Person,
+  PersonBuilder
+}
