@@ -1,6 +1,6 @@
-const { Person } = require("./Builder");
+const { Person } = require("./builder");
 
-test("Returns about-us for english language", () => {
+test("Person Builder test", () => {
   const person = Person.builder().setName("John").setAge(30).build();
   expect(person.getName()).toBe("John");
   expect(person.getAge()).toBe(30);
