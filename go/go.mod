@@ -1,3 +1,3 @@
 module design_pattern
 
-go 1.17
+go 1.18
