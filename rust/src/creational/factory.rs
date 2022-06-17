@@ -12,7 +12,7 @@ mod factory {
 
     trait Factory<T: Vehicle> {
         fn create_vehicle(&self, vehicle_name: &str) -> T;
-        fn dispatch(&self, mut vehicle: &mut T) {
+        fn dispatch(&self, vehicle: &mut T) {
             vehicle.set_name("From factory");
         }
     }
